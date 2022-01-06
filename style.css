@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 110%;
+    color: white;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-size: cover;
+}
+.card {
+    background: #000000d0;
+    border-radius: 30px;
+    padding: 2em;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+input[type="text"] {
+    background-color: #7c7c7c2b;
+    border-radius: 20px;
+    border: none;
+    padding: .3em 1em;
+    outline: none;
+    font-family: inherit;
+    color: #fff;
+    font-size: 100%;
+    width: calc(100% - 80px);
+}
+button {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background-color: #7c7c7c2b;
+    border: none;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+button:hover {
+    background-color: #7c7c7c8b;
+}
+h1 {
+    margin: 0;
+    margin-bottom: .5em;
+    font-size: 200%;
+}
+.description {
+    text-transform: capitalize;
+    margin-left: .2em;
+}
+.humidity, .speed, .description {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.weather.loading {
+    display: none;
+}
+.load {
+    display: none;
+    margin: 20px 0px 0px 10px;
+}
+.load.block {
+    display: block;
+}
+.error {
+    display: none;
+    margin: 20px 0px 0px 10px;
+}
